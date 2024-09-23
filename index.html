@@ -3,153 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Joaquin Bareiro Fleitas - Personal Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #d8f3dc;
-            color: #081c15;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #b7e4c7;
-            padding: 1rem;
-            text-align: center;
-        }
-        header .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        header .logo img {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-        header .logo h1 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            color: #40916c;
-        }
-        .article-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .article-list li {
-            margin-bottom: 1rem;
-        }
-        .article-list li a {
-            color: #1b4332;
-            text-decoration: none;
-        }
-        footer {
-            background-color: #081c15;
-            color: #d8f3dc;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .subscribe-box {
-            text-align: center;
-        }
-        .subscribe-box input[type="email"] {
-            padding: 0.5rem;
-            font-size: 1rem;
-            margin-right: 0.5rem;
-        }
-        .subscribe-box button {
-            padding: 0.5rem 1rem;
-            background-color: #5a189a;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .about-author {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #b7e4c7;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-        .about-author .author-info {
-            font-size: 1rem;
-        }
-        .about-author .social-icons {
-            display: flex;
-            gap: 0.5rem;
-        }
-        .about-author .social-icons a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: #5a189a;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    <title>Personal Blog</title>
+   <style>
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.6;
+  background-color: #e0e1dd;
+  color: #081c15;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #778da9;
+  padding: 1rem;
+  text-align: left;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  border-radius: 12%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+header .logo h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+.container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 10px;
+}
+.section {
+  margin-bottom: 2rem;
+}
+.section h2 {
+  margin-top: 0px;
+  color: #1b263b;
+  font-size: 40px;
+}
+.section h3 {
+  color: #1b263b;
+  font-size: 20px;
+}
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-list img{
+  object-fit: cover;
+  object-position: center;
+
+}
+.article-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-list li:hover {
+  transform: scale(1.05);
+  transition: 0.32s;
+}
+.article-list li img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+.article-list li a {
+  color: #1b4332;
+  text-decoration: none;
+  font-weight: bold;
+}
+.article-list li p {
+  margin: 0;
+}
+footer {
+  background-color: #081c15;
+  color: #d8f3dc;
+  text-align: center;
+  padding: 0.27rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.subscribe-box {
+  text-align: center;
+}
+.subscribe-box input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0rem;
+  font-family: Cambria, Cochin;
+}
+.subscribe-box button {
+  padding: 0.70rem 1rem;
+  padding-left: 2rem;
+  margin-left: 0;
+  background-color: #1b263b;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.about-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 6px;
+  background-color: #e0e1dd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.about-author .author-info {
+  font-size: 1rem;
+}
+.about-author .social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.about-author .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #0d1b2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+} 
+   </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="https://i.ibb.co/r7JpNDt/exposicion-batman-cdmx.jpg" alt="Logo">
+            <img src="ccxp-batman.png" alt="Logo">
             <h1>Fabio Joaquin Bareiro Fleitas</h1>
         </div>
     </header>
     <div class="container">
         <section class="section subscribe-box">
-            <h2>The Fabio Newsletter</h2>
-            <form action="#" method="post">
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-                <button type="submit">Subscribe</button>
+            <img src="ccxp-batman.png" alt="Logo">
+            <h2>The Fabio's Newsletter</h2>
+            <form action="atomic-habits-review.html" method="post">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required style="border-style: solid; 
+                border-color: atomic-habits-review.html1b263b;
+                border-right: none;">
+                <button type="submit" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Subscribe</button>
             </form>
-        </section>
-        <section class="section">
-            <h2>Welcome to My Blog!</h2>
-            <p>I am Fabio Joaquin Bareiro Fleitas, a student of electrical engineering. Here, I share my thoughts on modern themes, DIY projects with Arduino and other microcontrollers, and topics related to environmental impact. I enjoy reading, staying informed about various subjects, and engaging in challenging discussions.</p>
-        </section>
-        <section class="section">
-            <h2>Recent Articles</h2>
-            <ul class="article-list">
-                <!-- Replace with your article links -->
-                <li><a href="#">Title of Article 1</a> - Short description or mini-video</li>
-                <li><a href="#">Title of Article 2</a> - Short description or mini-video</li>
-                <li><a href="#">Title of Article 3</a> - Short description or mini-video</li>
-                <!-- Add more articles as needed -->
-            </ul>
         </section>
         <section class="section about-author">
             <div class="author-info">
-                <p>Written By</p>
-                <p>Fabio Joaquin Bareiro Fleitas</p>
+                <p style="font-weight: 700; font-size: 20px;">Written By</p>
+                <p style="font-weight: 700;">Fabio Joaquin Bareiro Fleitas</p>
             </div>
             <div class="social-icons">
-                <a href="https://www.youtube.com" target="_blank">YT</a>
-                <a href="https://www.instagram.com" target="_blank">IG</a>
-                <a href="https://www.threads.net" target="_blank">T</a>
+                <p style="font-weight: 700;">Connect:</p>
+                <a href="https://www.instagram.com/joaqunbar20/" target="_blank">
+                    <img src="Instagram_logo.png">
+                </a>
+                <a href="https://www.threads.net/@joaqunbar20?xmt=AQGzd4PYyrOEUMkQ7bJtYn9rheXOm3IlC0YuaMPlabKAMUMt" target="_blank">
+                    <img src="Threads_logo.png">
+                </a>
+                <a href="https://github.com/Fate-droid" target="_blank">
+                    <img src="github.svg">
+                </a>
             </div>
         </section>
         <section class="section">
-            <h2>Contact Information</h2>
+            <h3>Welcome to My Blog!</h3>
+            <p>I am Fabio Joaquin Bareiro Fleitas, a student of electrical engineering. Here, I share my thoughts on modern themes, DIY projects with Arduino and other microcontrollers, and topics related to environmental impact. I enjoy reading, staying informed about various subjects, and engaging in challenging discussions.</p>
+        </section>
+        <section class="section">
+            <h3>Archive</h3>
+            <ul class="article-list">
+                <li>
+                    <a href = "atomic-habits-review.html">
+                        <img src="atomic.jpg" alt="Thumbnail">
+                        <div>
+                            <a href="atomic-habits-review.html">Review del libro ATOMIC HABITS de James Clear</a>
+                            <p>Reflexiones sobre tips del libro y experiencia propia.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="mediation.jpeg" alt="Thumbnail">
+                    <div>
+                        <a href="atomic-habits-review.html">Efectos de la meditacion sobre el cuerpo y la mente</a>
+                        <p>Relato sobre experiencia propia con la practica de meditacion diaria y como esta moldando mi rutina y estado mental general.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="plane.jpeg" alt="Thumbnail">
+                    <div>
+                        <a href="atomic-habits-review.html">Tips para viajante asiduo</a>
+                        <p>Lo que puedo decir con base en mi experiencia en vuelos internacionales y nacionales, respecto a consejos y precauciones en un mundo con cada vez más despegues diarios.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <h3>Contact Information</h3>
             <p>For inquiries or collaboration opportunities, feel free to reach out:</p>
             <p>Email: joakobar2000@gmail.com</p>
             <p>Phone: +19 98857-7678</p>
@@ -160,3 +239,4 @@
     </footer>
 </body>
 </html>
+
